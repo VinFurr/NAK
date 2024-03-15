@@ -1,0 +1,278 @@
+body{
+  background-color:white;
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 19px;
+}
+
+/*navigation bar*/
+.navbar{
+  display: block;
+  position: relative;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+
+}
+.button{
+  padding: 10px;
+  margin: 0;
+  text-decoration: none;}
+.active{
+  background-color: #8a0700 ;
+  color: white;}
+.inactive{
+  background-color: white;
+  color: black;}
+.button:hover{
+  background-color: #ce3d36;}
+
+
+.red_bg_color{
+  background-color: #8a0700;
+}
+.full_width{
+  width: 100%;
+}
+.front_img{
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+}
+
+/*footer*/
+footer{
+  padding-bottom: 50px;
+  color: rgb(210, 210, 210);
+}
+.footer_flex{
+  width: 50%;
+}
+
+/*annet*/
+.div_border{
+  border-style: solid;
+  border-width: 2px;
+}
+
+.center_fb{
+  margin: auto;
+  width: 400px;
+}
+.center_content{
+  margin: auto;
+  width: 50%;
+  margin-bottom: 1em;
+  min-width: 650px;
+}
+
+.center_content2{
+  text-align: center;
+}
+/*p, h1, h2, h3, h4, ul{
+  margin: 30px;
+}*/
+li{
+  margin-top:15px;
+}
+
+.flex{
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  display: -webkit-flex; /*Safari*/
+}
+
+.flex_image{
+  display: inline-flex;
+  display: -webkit-flex; /*Safari*/
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: auto;
+  
+}
+
+/*for index.html*/
+
+.innhold{
+  padding: 10px 30px 30px 30px;
+}
+.info{
+  width:100%;
+  
+}
+.info_bilde{
+  width: 60%;
+}
+.info_header{
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.aktuelt{
+  width: 40%;
+}
+.innhold_aktuelt{
+  margin-top: 10px;
+  padding: 10px 30px 30px 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+/*index.html done*/
+/*Mainly for medlemmer.html*/
+.instructor_pfp{
+  height: 120px;
+  border-radius: 50%;
+  float: left;
+  margin: 0 30px 30px 30px;
+}
+
+.image{
+  width: 48%;
+  margin: auto;
+  
+}
+
+/*Tabell*/ 
+/*.center_conntent tr:nth-child(even){
+  background-color: #f2f2f2;}
+.center_content td, .center_content th {
+  border: 1px solid #ddd;
+  padding: 8px;}
+*/
+.tabell1 {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.table_wrapper{ 
+  /*nødvendig for at tabell skal kunne skrolle horisontalt 
+    og samtidig sentrert pga display:block i tabell1*/
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.tabell1 td, .tabell1 th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.tabell1 tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+
+.tabell1 th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: white;
+  color: black;
+}
+
+.pictures{
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 1em;
+  display: flex;
+}
+
+
+
+
+  /*tablet screen*/
+  @media screen and (max-width: 760px) {
+    body {
+      /*background-color: blueviolet;*/
+    }
+
+    /*navigation bar*/
+    .front_img{
+      display: block;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      width: 150px;
+    }
+    /*navigation bar end*/
+    /*footer*/
+    .footer_flex{
+      width: 75%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    /*footer end*/
+
+    .center_content{
+      margin: auto;
+      width: 90%;
+      min-width: auto;
+    }
+    .flex{
+      flex-direction: column;
+    }
+    .aktuelt{
+      width: 100%;
+    }
+    .innhold{
+      width: auto;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .info{
+      width: 100%;
+    }
+
+    
+
+    
+  }
+  /*Phone screen*/
+  @media screen and (max-width: 480px) {
+    body {
+     /* background-color: lightgreen;*/
+      font-size: 1em;
+   }
+   p, h1, h2, h3{
+    margin-left: 5px;
+    margin-right: 5px; 
+   }
+    /*navigation bar*/
+    .front_img{
+      display: block;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100px;
+    }
+    .navbar{
+      font-size: 0.9em;
+    }
+    /*navigation bar end*/
+    .center_content{
+      margin: auto;
+      width: 100%;
+   }
+
+   .innhold{
+      padding: 10px 0 30px 0px;
+    }
+
+    .innhold_aktuelt{
+      margin-top: 10px;
+      padding: 0 10px 30px 10px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+
+
+  }
