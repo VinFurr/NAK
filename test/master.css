@@ -71,7 +71,7 @@ footer{
 /*annet*/
 h1 {
   font-family: Sacramento;
-  font-size: 60px;
+  font-size: 40px;
 }
 
 .div_border{
@@ -154,7 +154,7 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-  min-width: 350px;
+  min-width: 450px;
 }
 
 .pictures{
@@ -167,7 +167,7 @@ h1 {
 
 @font-face {
   font-family: Sacramento;
-  src: url(./font/Sacramento.ttf);
+  src: url(./font/SansitaOne.ttf);
 }
 
   /*tablet screen*/
@@ -176,7 +176,7 @@ h1 {
       /*background-color: blueviolet;*/
     }
     h1 {
-      font-size: 50px;
+      font-size: 30px;
     }
 
     /*navigation bar*/
@@ -229,7 +229,7 @@ h1 {
       font-size: 1em;
    }
    h1 {
-    font-size: 40px;
+    font-size: 25px;
   }
    p, h1, h2, h3{
     margin-left: 5px;
