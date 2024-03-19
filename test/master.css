@@ -175,6 +175,9 @@ h1 {
     body {
       /*background-color: blueviolet;*/
     }
+    h1 {
+      font-size: 50px;
+    }
 
     /*navigation bar*/
     .front_img{
@@ -225,6 +228,9 @@ h1 {
      /* background-color: lightgreen;*/
       font-size: 1em;
    }
+   h1 {
+    font-size: 40px;
+  }
    p, h1, h2, h3{
     margin-left: 5px;
     margin-right: 5px; 
