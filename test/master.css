@@ -12,7 +12,7 @@ body{
   width: auto;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 40px;
+ /*margin-bottom: 40px;*/
   display: flex;
   justify-content: center;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
@@ -49,7 +49,7 @@ body{
 footer{
   background-color: rgb(179, 80, 0);
   padding-bottom: 50px;
-  color: rgb(210, 210, 210);
+  color: rgb(240, 240, 240);
 }
 .footer_flex{
   width: 50%;
@@ -65,7 +65,7 @@ footer{
 }
 
 .footer_link{
-  color: rgb(210, 210, 210);
+  color: rgb(240, 240, 240);
 }
 
 /*annet*/
@@ -128,14 +128,19 @@ h1 {
   padding-top: 0;
 }
 
-.aktuelt{
-  width: 40%;
+.front_bg{
+  background-image: url("./bilder/bannerbilde.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+
 }
-.innhold_aktuelt{
-  margin-top: 10px;
-  padding: 10px 30px 30px 30px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+.bannerbox{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.35);
 }
+
 /*index.html done*/
 /*Mainly for medlemmer.html*/
 .board_pfp{
