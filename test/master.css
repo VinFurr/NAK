@@ -47,7 +47,7 @@ body{
 
 /*footer*/
 footer{
-  background-color: rgb(231,65,25);
+  background-color: rgb(179, 80, 0);
   padding-bottom: 50px;
   color: rgb(210, 210, 210);
 }
@@ -265,7 +265,10 @@ h1 {
       width: 100%;
       min-width: 0;
     }
-
-
+    .board_pfp{
+      margin: 0 5px 10px 5px;
+      height: 100px;
+    }
+ 
 
   }
