@@ -2,7 +2,7 @@ body{
   background-color:white;
   margin: 0;
   font-family: sans-serif;
-  font-size: 19px;
+  font-size: 20px;
 }
 
 /*navigation bar*/
@@ -115,6 +115,13 @@ h1 {
 
 /*for index.html*/
 
+.w3-animate-top{
+  position:relative;
+  animation:animatetop 1s
+}
+@keyframes animatetop{
+  from{top:-300px; opacity:0} to{top:0;opacity:1}}
+
 .innhold{
   padding: 10px 30px 30px 30px;
 }
@@ -141,7 +148,7 @@ h1 {
 .bannerbox{
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: rgba(255, 255, 255, 0.35);
+  background-color: rgba(255, 255, 255, 0.55);
 }
 
 /*index.html done*/
@@ -257,7 +264,7 @@ h1 {
       width: 100px;
     }
     .navbar{
-      font-size: 0.9em;
+      font-size: 1em;
     }
     /*navigation bar end*/
     .center_content{
