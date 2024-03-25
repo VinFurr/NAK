@@ -2,7 +2,8 @@ body{
   background-color:white;
   margin: 0;
   font-family: sans-serif;
-  font-size: 20px;
+  font-size: 21px;
+  line-height: 1.6;
 }
 
 /*navigation bar*/
@@ -52,6 +53,7 @@ footer{
   background-color: rgb(179, 80, 0);
   padding-bottom: 50px;
   color: rgb(240, 240, 240);
+  font-size: 18px;
 }
 .footer_flex{
   width: 50%;
@@ -120,7 +122,7 @@ h1 {
   animation:animatetop 1s
 }
 @keyframes animatetop{
-  from{top:-300px; opacity:0} to{top:0;opacity:1}}
+  from{top:-200px; opacity:0} to{top:0;opacity:1}}
 
 .innhold{
   padding: 10px 30px 30px 30px;
