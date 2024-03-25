@@ -132,7 +132,7 @@ h1 {
 
 .front_bg{
   background-image: url("./bilder/bannerbilde.jpg");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center top;
   background-attachment: fixed;
@@ -178,6 +178,11 @@ h1 {
   src: url(./font/SansitaOne.ttf);
 }
 
+  @media screen and (max-width:1150px) {
+    .front_bg{
+      background-size: 1150px;
+    }
+  }
   /*tablet screen*/
   @media screen and (max-width: 760px) {
     body {
@@ -212,9 +217,7 @@ h1 {
     .flex{
       flex-direction: column;
     }
-    .aktuelt{
-      width: 100%;
-    }
+    
     .innhold{
       width: auto;
       padding-left: 0;
@@ -227,7 +230,9 @@ h1 {
       min-width: 450px;
     }
     
-
+    .front_bg{
+      background-size: 900px;
+    }
     
   }
   /*Phone screen*/
@@ -277,6 +282,9 @@ h1 {
       margin: 0 5px 10px 5px;
       height: 100px;
     }
- 
+    
+    .front_bg{
+      background-size: 700px;
+    }
 
   }
