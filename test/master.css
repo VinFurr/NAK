@@ -1,9 +1,10 @@
 body{
-  background-color:white;
+  background-color:rgba(255, 251, 248, 0.73);
   margin: 0;
   font-family: sans-serif;
-  font-size: 21px;
+  font-size: 19px;
   line-height: 1.5;
+  color:rgb(40, 40, 40)
 }
 
 /*navigation bar*/
@@ -29,7 +30,7 @@ body{
   background-color: rgba(229, 176, 126, 1);
   color: black;}
 .inactive{
-  background-color: white;
+  background-color: none;
   color: black;}
 .button:hover{
   background-color: rgba(229, 176, 126, 0.5);}
@@ -112,25 +113,11 @@ h1 {
   margin: auto;
   
 }
-
-
+.rotate5deg{
+  transform: rotate(5deg);
+}
 
 /*for index.html*/
-
-.animate-top{
-  position:relative;
-  animation:animatetop 1s;
-}
-
-.animate-top-logo{
-  position:relative;
-  animation:animatetop 1s;
-  /*animation-delay: 1s;*/  
-}
-@keyframes animatetop{
-  from{top:-100px; opacity:0} to{top:0;opacity:1}
-}
-
 .innhold{
   padding: 10px 30px 30px 30px;
 }
@@ -161,6 +148,17 @@ h1 {
 }
 
 /*index.html done*/
+/*Mainly for furry_kunst.html*/
+.furryXart_bg{
+  background-image: url("./bilder/vozzy_violin_art.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px;
+}
+
+/*furry_kunst.html done*/
 /*Mainly for om_oss.html*/
 .board_pfp{
   height: 120px;
@@ -171,7 +169,7 @@ h1 {
 .board_box{
   min-height: 120px;
 }
-
+/*om_oss.html done*/
 .image{
   display: block;
   position: relative;
@@ -194,6 +192,13 @@ h1 {
   margin: 10px 0 20px 0;
 }
 
+.contentbox{
+  background-color: rgba(255, 255, 255, 0.87);
+  border-radius: 25px;
+  padding: 20px;
+  color: black;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.75);
+}
 
 .word_descrption{
   text-decoration: underline dotted;
@@ -202,6 +207,22 @@ h1 {
 .quote{
   font-style: italic;
 }
+
+.animate-top{
+  position:relative;
+  animation:animatetop 1s;
+}
+
+.animate-top-logo{
+  position:relative;
+  animation:animatetop 1s;
+  /*animation-delay: 1s;*/  
+}
+@keyframes animatetop{
+  from{top:-100px; opacity:0} to{top:0;opacity:1}
+}
+
+/*other media under here*/
 
 @font-face {
   font-family: Sacramento;
