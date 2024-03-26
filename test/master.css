@@ -3,7 +3,7 @@ body{
   margin: 0;
   font-family: sans-serif;
   font-size: 21px;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 /*navigation bar*/
@@ -161,12 +161,12 @@ h1 {
 }
 
 /*index.html done*/
-/*Mainly for medlemmer.om osshtml*/
+/*Mainly for om_oss.html*/
 .board_pfp{
   height: 120px;
   border-radius: 50%;
   float: left;
-  margin: 0 30px 10px 30px;
+  margin: 0 20px 10px 20px;
 }
 .board_box{
   min-height: 120px;
@@ -187,6 +187,13 @@ h1 {
   gap: 1em;
   display: flex;
 }
+.board_header{
+  margin: 10px;
+}
+.board_p{
+  margin: 10px 0 20px 0;
+}
+
 
 
 @font-face {
