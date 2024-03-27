@@ -116,6 +116,9 @@ h1 {
 .rotate5deg{
   transform: rotate(5deg);
 }
+.rotate-5deg{
+  transform: rotate(-5deg);
+}
 
 /*for index.html*/
 .innhold{
