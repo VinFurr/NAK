@@ -88,7 +88,7 @@ h1 {
 .center_content{
   margin: auto;
   width: 50%;
-  margin-bottom: 1em;
+  /*margin-bottom: 1em;*/
   min-width: 650px;
 }
 
@@ -145,6 +145,7 @@ h1 {
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: rgba(255, 255, 255, 0.55);
+  min-height: 400px;
 }
 
 /*index.html done*/
@@ -155,7 +156,7 @@ h1 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 10px;
+  padding: 10px 0;
 }
 
 /*furry_kunst.html done*/
