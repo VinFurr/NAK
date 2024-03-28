@@ -288,6 +288,11 @@ h1 {
     .front_bg{
       background-size: 900px;
     }
+
+    .bannerbox{
+     min-height: 0;
+    }
+
     
   }
   /*Phone screen*/
