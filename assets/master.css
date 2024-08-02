@@ -77,6 +77,10 @@ footer{
   color: rgb(240, 240, 240);
 }
 
+.footer_T_logo{
+  width: 20px;
+}
+
 /*annet*/
 h1 {
   font-family: Sacramento, sans-serif;
