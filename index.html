@@ -71,7 +71,32 @@
       </div>    
     </div>
     <div class="center_content">
-      
+      <div class="gallery">
+        <div class="gallery-item">
+            <img src="./assets/bilder/gallery/erik1.jpg" alt="Image 1" onclick="openFullscreen(this, '© Eirik Oaks')">
+        </div>
+        <div class="gallery-item">
+            <img src="./assets/bilder/gallery/erik2.jpg" alt="Image 2" onclick="openFullscreen(this, '© Eirik Oaks')">
+        </div>
+        <div class="gallery-item">
+            <img src="./assets/bilder/gallery/erik3.jpg" alt="Image 3" onclick="openFullscreen(this, '© Eirik Oaks')">
+        </div>
+        <div class="gallery-item">
+            <img src="./assets/bilder/gallery/erik4.jpg" alt="Image 4" onclick="openFullscreen(this, '© Eirik Oaks')">
+        </div>
+        <div class="gallery-item">
+            <img src="./assets/bilder/gallery/erik5.jpg" alt="Image 5" onclick="openFullscreen(this, '© Eirik Oaks')">
+        </div>
+        <div class="gallery-item">
+          <img src="./assets/bilder/gallery/vapor1.png" alt="Image 5" onclick="openFullscreen(this, '©  &quot Vapor &quot')">
+      </div>
+        <!-- Add more images as needed -->
+      </div>
+
+      <div id="fullscreen-overlay" onclick="closeFullscreen()">
+        <img id="fullscreen-image" src="" alt="Fullscreen Image">
+        <div id="fullscreen-caption"></div>
+      </div>
     </div>
 
     <!--Footer-->
@@ -102,4 +127,5 @@
       </div>
     </footer>
   </body>
+  <script src="./assets/script.js"></script>
 </html>

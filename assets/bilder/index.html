@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scalable Picture Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .gallery {
+            column-count: 3;
+            column-gap: 10px;
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .gallery-item {
+            break-inside: avoid;
+            margin-bottom: 10px;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            cursor: pointer;
+        }
+
+        #fullscreen-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            flex-direction: column;
+        }
+
+        #fullscreen-overlay img {
+            max-width: 90%;
+            max-height: 80%;
+        }
+
+        #fullscreen-caption {
+            color: white;
+            margin-top: 10px;
+            font-size: 1.2em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="./gallery/erik1.jpg" alt="Image 1" onclick="openFullscreen(this, 'Subtitle for Image 1')">
+        </div>
+        <div class="gallery-item">
+            <img src="./gallery/erik2.jpg" alt="Image 2" onclick="openFullscreen(this, 'Subtitle for Image 2')">
+        </div>
+        <div class="gallery-item">
+            <img src="./gallery/erik3.jpg" alt="Image 3" onclick="openFullscreen(this, 'Subtitle for Image 3')">
+        </div>
+        <div class="gallery-item">
+            <img src="./gallery/erik4.jpg" alt="Image 4" onclick="openFullscreen(this, 'Subtitle for Image 4')">
+        </div>
+        <div class="gallery-item">
+            <img src="./gallery/erik5.jpg" alt="Image 5" onclick="openFullscreen(this, 'Subtitle for Image 5')">
+        </div>
+        <!-- Add more images as needed -->
+    </div>
+
+    <div id="fullscreen-overlay" onclick="closeFullscreen()">
+        <img id="fullscreen-image" src="" alt="Fullscreen Image">
+        <div id="fullscreen-caption"></div>
+    </div>
+
+    <script>
+        function openFullscreen(imgElement, captionText) {
+            const overlay = document.getElementById('fullscreen-overlay');
+            const fullscreenImage = document.getElementById('fullscreen-image');
+            const fullscreenCaption = document.getElementById('fullscreen-caption');
+            fullscreenImage.src = imgElement.src;
+            fullscreenCaption.textContent = captionText;
+            overlay.style.display = 'flex';
+        }
+
+        function closeFullscreen() {
+            const overlay = document.getElementById('fullscreen-overlay');
+            overlay.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
