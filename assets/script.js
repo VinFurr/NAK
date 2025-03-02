@@ -11,3 +11,19 @@ function closeFullscreen() {
     const overlay = document.getElementById('fullscreen-overlay');
     overlay.style.display = 'none';
 }
+
+
+fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+        })
+        .catch(error => console.error("Error loading footer:", error));
+
+
+fetch("zENG_footer.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("zENG_footer").innerHTML = data;
+        })
+        .catch(error => console.error("Error loading footer:", error));
